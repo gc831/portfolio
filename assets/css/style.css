@@ -1,5 +1,8 @@
 :root {
-
+    --primary-color: #fff;
+    --secondary-color: #e50914;
+    --tertiary-color: #57b2ff;
+    --fourth-color: #000;
 }
 
 * {
@@ -12,4 +15,53 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.8em;
     background-color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--fourth-color);
+    padding: 20px 35px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1 a span {
+    color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    /* By setting the value to 1.55vw, we're telling the browser that the font's size should be roughly 1.55% of the window's overall width. */
+    font-size: 2.5vw;
+}
+
+.profile-pic {
+    display: flex;
+    justify-content: center;
+    padding: 10px 35px;
+    /* Fixed my issue of wanting the picture to take up 100% of the screen and not bleed over */
+    width: 100%;
+    /* */
+    align-items: flex-start;
+    border-radius: 50%;
+    /* position:static; */
+    /* Probably not the proper way to lighten a picture BUT it worked :) */
+    opacity: .75;
 }
