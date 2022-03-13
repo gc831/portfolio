@@ -15,5 +15,8 @@
 ## Website
 https://gc831.github.io/portfolio/
 
+## Screenshot
+![image](https://user-images.githubusercontent.com/88457455/158042156-c01f9644-6abd-4096-9d2d-6ee0ecebeccd.png)
+
 ## Contribution
 Made with ❤️ by Giovanni Colon
