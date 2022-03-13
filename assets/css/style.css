@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #fff;
-    --secondary-color: #e50914;
-    --tertiary-color: #57b2ff;
+    --primary-color: #cbc6c0;
+    --secondary-color: #57b2ff;
     --fourth-color: #000;
+    --fav-color: #e50914;
 }
 
 * {
@@ -20,7 +20,9 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    /* Gave the header a black background */
     background-color: var(--fourth-color);
+    /*  */
     padding: 20px 35px;
     position: -webkit-sticky;
     position: sticky;
@@ -28,13 +30,33 @@ header {
     z-index: 9999;
 }
 
-header h1 a span {
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fourth-color);
+    padding: 20px 35px;
+}
+
+footer li {
+    color: var(--primary-color);
+}
+
+header h1 a span, footer h2 span, .my-info li span, .my-work h2, .about-me h2 {
     color: var(--secondary-color);
 }
 
+/* SMU */
 a {
     text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
     color: #fff;
+}
+
+a:active {
+    color: var(--fav-color);
 }
 
 header nav ul {
@@ -52,7 +74,7 @@ header nav ul li a {
     font-size: 2.5vw;
 }
 
-.profile-pic {
+.profile-pic, .run-buddy img {
     display: flex;
     justify-content: center;
     padding: 10px 35px;
@@ -64,4 +86,68 @@ header nav ul li a {
     /* position:static; */
     /* Probably not the proper way to lighten a picture BUT it worked :) */
     opacity: .75;
+}
+
+#about, #portfolio, #contact {
+    margin: 15px 20px;
+}
+
+.about-me, .my-work, .contact-me, .run-buddy a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me, .my-work, .contact-me h2 {
+    padding: 10px;
+    color: var(--primary-color);
+}
+
+.about-me p {
+    text-align: center;
+}
+
+.about-me p a {
+    text-decoration: underline;
+    color: var(--fav-color);
+}
+
+@media screen and (min-width:980px) {
+    h1 {
+        font-size: 42px;
+    }
+
+    header li a {
+        padding: 10px 15px;
+        font-size: 20px;
+    }
+    
+    header nav ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+
+    .profile-pic {
+        flex: 0 0 100%;
+        /* fixed my issue with centering .profile-pc once basis was met */
+        margin: 0 auto;
+        /*  */
+        justify-content: center;
+        width: 1092px;
+        height: 786px;
+    }
+
+    .run-buddy img {
+        flex: 0 0 100%;
+        /* fixed my issue with centering .profile-pc once basis was met */
+        margin: 0 auto;
+        /*  */
+        justify-content: center;
+        width: 652px;
+        height: 352px;
+    }
+    
 }
