@@ -61,7 +61,7 @@ a:active {
 
 header nav ul {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
     list-style: none;
@@ -142,9 +142,7 @@ header nav ul li a {
 
     .run-buddy img {
         flex: 0 0 100%;
-        /* fixed my issue with centering .profile-pc once basis was met */
         margin: 0 auto;
-        /*  */
         justify-content: center;
         width: 652px;
         height: 352px;
