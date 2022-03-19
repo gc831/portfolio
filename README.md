@@ -10,7 +10,7 @@
 * Gave styling code order of sequence
 * Gave a descriptive title
 * Added comments
-*Made responsive
+* Made responsive
 
 ## Website
 https://gc831.github.io/portfolio/
